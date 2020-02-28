@@ -9,7 +9,7 @@ Future<void> mainCommon(String env) async {
   // Always call this if the main method is asynchronous
   WidgetsFlutterBinding.ensureInitialized();
   // Load the JSON config into memory
-  await ConfigReader.initialize();
+  await ConfigReader.initialize(env);
 
   Color primaryColor;
   switch (env) {
